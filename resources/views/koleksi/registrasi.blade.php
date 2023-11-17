@@ -10,6 +10,16 @@
             <x-input-error :messages="$errors->get('namaKoleksi')" class="mt-2" />
         </div>
 
+        {{-- Jenis Koleksi --}}
+        <div class="mt-4">
+            <x-input-label for="jenisKoleksi" :value="__('Jenis Koleksi')" />
+            <select name="jenisKoleksi" id="jenisKoleksi" class="block mt-1 w-full" required autocomplete="off">
+                <option value="1">Buku</option>
+                <option value="2">Majalah</option>
+                <option value="3">Cakram Digital</option>
+            </select>
+        </div>
+
         {{-- Jumlah Koleksi --}}
         <div class="mt-4">
             <x-input-label for="jumlahKoleksi" :value="__('Jumlah Koleksi')" />
